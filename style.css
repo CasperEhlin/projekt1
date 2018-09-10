@@ -30,3 +30,18 @@ border-left: 0.5vw solid  rgb(66, 66, 66);;
 .show_prov{
 transform: translateX(0);
 }
+
+h3{
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+
+.answer{
+height: 1.5vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 1vw;
+border: none;
+border-left: 0.5vw solid  rgb(66, 66, 66);;
+}
