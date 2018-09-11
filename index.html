@@ -23,46 +23,54 @@
     
         $(document).ready(function(){
 
-               
-                $(".elevinmatning").click(function(){
-                     
-                     $(".provsvar").removeClass("show_prov");
-                     
-                });
-               
+        
+        $(".elevinmatning").click(function(){
+                        
+                        $(".provsvar").removeClass("show_prov");
+                        
+                        });
+                
+                        $("#elev1").click(function(){
+                        
+                                $("#elev1provsvar").addClass("show_prov");
+                                
+                        });
 
-                $("#elev1").click(function(){
-                     
-                        $("#elev1provsvar").addClass("show_prov");
+                        $("#elev2").click(function(){
                         
-                });
+                        $("#elev2provsvar").addClass("show_prov");
+                        
+                        });
 
-                $("#elev2").click(function(){
-                     
-                     $("#elev2provsvar").addClass("show_prov");
-                     
-                });
+                        $("#elev3").click(function(){
+                                
+                                $("#elev3provsvar").addClass("show_prov");
+                                
+                        });
 
-                $("#elev3").click(function(){
-                        
-                        $("#elev3provsvar").addClass("show_prov");
-                        
-                });
+                        $("#elev4").click(function(){
+                                
+                                $("#elev4provsvar").addClass("show_prov");
+                                
+                        });
 
-                $("#elev4").click(function(){
-                        
-                        $("#elev4provsvar").addClass("show_prov");
-                        
-                });
+                        $("#elev5").click(function(){
+                                
+                                $("#elev5provsvar").addClass("show_prov");
+                                
+                        });
 
-                $("#elev5").click(function(){
-                        
-                        $("#elev5provsvar").addClass("show_prov");
-                        
-                });
 
-               
-              
+                $("input").change(function(){  
+        
+
+                 $("#elev5").click(function(){
+                                
+                                $("#elev5provsvar").addClass("show_prov");
+                                
+                        });
+                        
+                });  
 
         });
 
@@ -73,7 +81,14 @@
 
 <body>
        
-         <div class="container-fluid">
+        <header>
+                <h1>Provstatistik</h1>
+        </header>
+              
+        
+
+        <div class="container-fluid">
+               
 
                 <div class="row">
 
@@ -270,7 +285,39 @@
                         
                         <div class="col-sm-7 stats">
                                 
+                                <div class="row staplar" id="staplar">
                                 
+                                        <div class="col-sm-2 f1medel">
+
+                                                Fråga 1 Medel
+
+                                        </div>
+                                        <div class="col-sm-2 f2medel">
+
+                                                Fråga 2 Medel
+                                        </div>
+
+                                        <div class="col-sm-2 f3medel">
+
+                                                Fråga 3 Medel
+                                        </div>
+
+                                        <div class="col-sm-2 f4medel">
+
+                                                Fråga 4 Medel
+
+                                        </div>
+                                        <div class="col-sm-2 f5medel">
+
+                                                Fråga 5 Medel
+                                        </div>
+
+                                        <div class="col-sm-2 maxmedel">
+
+                                                Max medel
+                                        </div>
+
+                                </div>  
 
                         </div>
                 
