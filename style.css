@@ -1,0 +1,71 @@
+
+body{
+
+}
+
+.elevinmatning {
+
+height: 5vw;
+
+}
+
+.pupil{
+height: 5vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 1.5vw;
+border: none;
+border-left: 1vw solid   rgb(72, 143, 83);
+}
+
+.point{
+height: 5vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 1.5vw;
+border: none;
+border-left: 1vw solid   rgb(72, 143, 83);
+}
+
+h3{
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+
+.answer{
+height: 1.5vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 1vw;
+border: none;
+border-left: 0.5vw solid   rgb(72, 143, 83);
+}
+
+.show_prov{
+transform: translateX(0) !important;
+opacity: 1 !important;
+transition: all 0.5s ease;
+}
+
+.provsvar {
+opacity: 0;
+position: absolute;
+transform: translateX(20vw);
+transition: all 0.5s ease;
+}
+
+.elever {
+background-color: rgb(72, 143, 83);
+height: 100vh;
+}
+
+.prov {
+background-color:rgb(104, 206, 119);
+height: 100vh;
+}
+
+.stats {
+background-color: rgb(138, 255, 157);
+height: 100vh;
+}
