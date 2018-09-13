@@ -1,19 +1,17 @@
-var klassavg=[1,2,3,4,5], klassTotal=0,klassAverage=0;
- for(var i=0;i<klassavg.length;i++)
-  {klassTotal+=klassavg[i];}// lägger samman värdena i arrayen
-    klassAverage=(klassTotal/klassavg.length);// räknar ut medelvärde
+
+$(document).ready(function(){
+  $("input").on("input", function(){  
 
 
- 
-var taskavg=[1,2,3,4,5], taskTotal=0,taskAverage=0;
-  for(var i=0;i<taskavg.length;i++)
-     {taskTotal+=taskavg[i];}// lägger samman värdena i arrayen
-       taskAverage=(taskTotal/taskavg.length);// räknar ut medelvärde
-
- 
-
-var elevtot;
-
-var testmax=3;
-
-var taskmax;
+function getAvarage(question) {
+  let $inputs = $(".provsvar div:nth-child("+question+") .answer");
+  let sum = 0;
+  for(let i = 0; i < $inputs.length; i++) {
+    if($inputs.eq(i).val() > 0) {
+      sum += parseFloat($inputs.eq(i).val());
+    }
+  }
+  return sum / $inputs.length;
+}
+  });
+});
