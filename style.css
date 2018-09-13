@@ -55,6 +55,30 @@ border: none;
 border-left: 1vw solid   rgb(104, 206, 119);
 }
 
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
+#elevtotal1 {
+background-color: rgb(212, 255, 219);
+}
+
 h3{
 color: white;
 font-family: 'Roboto', sans-serif;
@@ -104,73 +128,135 @@ box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.3);
 }
 
 
-@keyframes padding {
-from{
-    padding-top:  50vh;
-}
-
-to{
-    padding-top:  20vh;
-}
-
-}
 
 .f1medel {
 background-color: rgba(110, 255, 132, 0.3);
-animation: 1.2s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
 }
 
 .f2medel {
 background-color: rgba(110, 255, 132, 0.4);
-animation: 0.5s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
 }
 
 .f3medel {
 background-color: rgba(110, 255, 132,  0.5); 
-animation: 2s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
 }
 
 .f4medel {
 background-color: rgba(110, 255, 132, 0.6); 
-animation: 1s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
 }
 
 .f5medel {
 background-color: rgba(110, 255, 132, 0.7); 
-animation: 2.2s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
 }
 
 .maxmedel {
 background-color: rgba(110, 255, 132, 0.8); 
-animation: 7s padding ease infinite alternate;
 transition: all 0.5s ease;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 1.5vw;
+font-size: 1vw;
 color: white;
+}
+
+.modal {
+display: none;
+position: fixed; 
+padding-top: 5vw;
+overflow: auto;
+background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+background-color: #fefefe;
+margin: auto;
+width: 80vw;
+box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.3);
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+
+h2{
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+
+.modal-body {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+padding: 2vw;
+padding-left: 4vw;
+
+}
+
+.modal-input {
+height: 5vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 1.5vw;
+margin-right: 50vw;
+}
+
+.modal-footer {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
 }
