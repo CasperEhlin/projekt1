@@ -1,4 +1,7 @@
 
+$(document).ready(function(){
+  $("input").on("input", function(){  
+
 
 function getAvarage(question) {
   let $inputs = $(".provsvar div:nth-child("+question+") .answer");
@@ -10,10 +13,5 @@ function getAvarage(question) {
   }
   return sum / $inputs.length;
 }
-
-$(document).ready(function(){
-  $("input").on("input", function(){  
-
-    console.log(getAvarage(1));
   });
 });
