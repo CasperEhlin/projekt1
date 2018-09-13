@@ -1,8 +1,4 @@
 
-$(document).ready(function(){
-  $("input").on("input", function(){  
-
-
 function getAvarage(question) {
   let $inputs = $(".provsvar div:nth-child("+question+") .answer");
   let sum = 0;
@@ -13,5 +9,15 @@ function getAvarage(question) {
   }
   return sum / $inputs.length;
 }
+
+$(document).ready(function(){
+  $("input").on("input", function(){  
+
+    updateDiagram();
   });
 });
+
+function updateDiagram() {
+
+  let avarage = getAvarage(1);
+}
