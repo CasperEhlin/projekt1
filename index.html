@@ -88,49 +88,461 @@
                 $("input").keyup(function(){  
                         
                         /* 83vh är max 
-
-
-
-                        $(".f1medel").text("Fråga 1: "+klassAverage+" av "+testmax);
-                        $(".f2medel").text("Fråga 2: "+klassAverage+" av "+testmax);
-                        $(".f3medel").text("Fråga 3: "+klassAverage+" av "+testmax);
-                        $(".f4medel").text("Fråga 4: "+klassAverage+" av "+testmax);
-                        $(".f5medel").text("Fråga 5: "+klassAverage+" av "+testmax);
+                        */
+                        $(".f1medel").text("Fråga 1: "+task1Average+" av "+testmax);
+                        $(".f2medel").text("Fråga 2: "+task2Average+" av "+testmax);
+                        $(".f3medel").text("Fråga 3: "+task3Average+" av "+testmax);
+                        $(".f4medel").text("Fråga 4: "+task4Average+" av "+testmax);
+                        $(".f5medel").text("Fråga 5: "+task5Average+" av "+testmax);
                         $(".maxmedel").text("Totalt: "+klassAverage+" av "+testmax);
                         
-                        
+
+
                         $(".f1medel").css({
-                        "padding-top":  (klassAverage/testmax*83)+"vh"
+                        "padding-top":  (task1Average/testmax*83)+"vh"
                         });
                         
                         $(".f2medel").css({
-                        "padding-top":  (klassAverage/testmax*83)+"vh"
+                        "padding-top":  (task2Average/testmax*83)+"vh"
                         });
                         
                         $(".f3medel").css({
-                        "padding-top":  (klassAverage/testmax*83)+"vh"
+                        "padding-top":  (task3Average/testmax*83)+"vh"
                         });
                         
                         $(".f4medel").css({
-                        "padding-top":  (klassAverage/testmax*83)+"vh"
+                        "padding-top":  (task4Average/testmax*83)+"vh"
                         });
 
                         $(".f5medel").css({
-                        "padding-top":  (klassAverage/testmax*83)+"vh"
+                        "padding-top":  (task5Average/testmax*83)+"vh"
                         });
                         
                         $(".maxmedel").css({
                         "padding-top":  (klassAverage/testmax*83)+"vh"
                         });
-                       
-               */
+                          
+                         
+                         $("#elev1svar1").css({
+                         
+                                 "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                 +
+                                 (($("#elev1svar1").val() / $("#task1max").val()*100))
+                                 +
+                                 "%,#ffffff " 
+                                 +
+                                 (($("#elev1svar1").val() / $("#task1max").val()*100))
+                                 + 
+                                 "%,#ffffff 100%)"
+                         });
+
+                           $("#elev1svar2").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev1svar2").val() / $("#task2max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev1svar2").val() / $("#task2max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev1svar3").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev1svar3").val() / $("#task3max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev1svar3").val() / $("#task3max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev1svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev1svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev1svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
                         
+                                $("#elev1svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev1svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev1svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                                
+                        
+                                $("#elev1svar5").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev1svar5").val() / $("#task5max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev1svar5").val() / $("#task5max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+
+
+                         $("#elev2svar1").css({
+                         
+                                 "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                 +
+                                 (($("#elev2svar1").val() / $("#task1max").val()*100))
+                                 +
+                                 "%,#ffffff " 
+                                 +
+                                 (($("#elev2svar1").val() / $("#task1max").val()*100))
+                                 + 
+                                 "%,#ffffff 100%)"
+                         });
+
+                           $("#elev2svar2").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev2svar2").val() / $("#task2max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev2svar2").val() / $("#task2max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev2svar3").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev2svar3").val() / $("#task3max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev2svar3").val() / $("#task3max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev2svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev2svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev2svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                        
+                                $("#elev2svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev2svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev2svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                                
+                        
+                                $("#elev2svar5").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev2svar5").val() / $("#task5max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev2svar5").val() / $("#task5max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+
+                         $("#elev3svar1").css({
+                         
+                                 "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                 +
+                                 (($("#elev3svar1").val() / $("#task1max").val()*100))
+                                 +
+                                 "%,#ffffff " 
+                                 +
+                                 (($("#elev3svar1").val() / $("#task1max").val()*100))
+                                 + 
+                                 "%,#ffffff 100%)"
+                         });
+
+                           $("#elev3svar2").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev3svar2").val() / $("#task2max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev3svar2").val() / $("#task2max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev3svar3").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev3svar3").val() / $("#task3max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev3svar3").val() / $("#task3max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev3svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev3svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev3svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                        
+                                $("#elev3svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev3svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev3svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                                
+                        
+                                $("#elev3svar5").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev3svar5").val() / $("#task5max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev3svar5").val() / $("#task5max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+                        
+                         $("#elev4svar1").css({
+                         
+                                 "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                 +
+                                 (($("#elev4svar1").val() / $("#task1max").val()*100))
+                                 +
+                                 "%,#ffffff " 
+                                 +
+                                 (($("#elev4svar1").val() / $("#task1max").val()*100))
+                                 + 
+                                 "%,#ffffff 100%)"
+                         });
+
+                           $("#elev4svar2").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev4svar2").val() / $("#task2max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev4svar2").val() / $("#task2max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev4svar3").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev4svar3").val() / $("#task3max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev4svar3").val() / $("#task3max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev4svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev4svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev4svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                        
+                                $("#elev4svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev4svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev4svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                                
+                        
+                                $("#elev4svar5").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev4svar5").val() / $("#task5max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev4svar5").val() / $("#task5max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                         
+
+
+                         $("#elev5svar1").css({
+                         
+                                 "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                 +
+                                 (($("#elev5svar1").val() / $("#task1max").val()*100))
+                                 +
+                                 "%,#ffffff " 
+                                 +
+                                 (($("#elev5svar1").val() / $("#task1max").val()*100))
+                                 + 
+                                 "%,#ffffff 100%)"
+                         });
+
+                           $("#elev5svar2").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev5svar2").val() / $("#task2max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev5svar2").val() / $("#task2max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev5svar3").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev5svar3").val() / $("#task3max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev5svar3").val() / $("#task3max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+
+
+                                $("#elev5svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev5svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev5svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                        
+                                $("#elev5svar4").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev5svar4").val() / $("#task4max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev5svar4").val() / $("#task4max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                                
+                        
+                                $("#elev5svar5").css({
+                         
+                         "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                         +
+                         (($("#elev5svar5").val() / $("#task5max").val()*100))
+                         +
+                         "%,#ffffff " 
+                         +
+                         (($("#elev5svar5").val() / $("#task5max").val()*100))
+                         + 
+                         "%,#ffffff 100%)"
+                        });
+                         
+                      
                 });  
 
         });
 
     </script>
-
+  
 
 </head>
 
@@ -387,6 +799,8 @@
                           </div>
                         </div>
                       
+                        
+
                       </div>
                       
 </body>
