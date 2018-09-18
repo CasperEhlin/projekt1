@@ -35,6 +35,8 @@ body{
     height: 5vw;
     
     }
+
+ 
     
     .pupil{
     height: 5vw;
@@ -54,29 +56,6 @@ body{
     border-left: 1vw solid   rgb(104, 206, 119);
     }
     
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
-    
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
-    
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
-    
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
-    
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
-    
-    #elevtotal1 {
-    background-color: rgb(212, 255, 219);
-    }
     
     h3{
     color: white;
@@ -93,6 +72,7 @@ body{
     font-size: 1vw;
     border: none;
     border-left: 0.5vw solid   rgb(72, 143, 83);
+    transition: all 0.5s ease;
     }
     
     .show_prov{

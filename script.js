@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $(document).ready(function(){
   
@@ -42,3 +43,5 @@ $("input").change(function(){
                                            
 });
 });
+=======
+>>>>>>> c7eb1b6f61d1eba9ccf47120ea73bfbddb946426
