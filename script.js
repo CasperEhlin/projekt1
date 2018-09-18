@@ -34,7 +34,7 @@ $("input").change(function(){
                                 task5Average=(task5Total/task5avg.length);// räknar ut medelvärde
                                     console.log(task5Average); // Visar resultat (temporär för att kunna se så att detta funkar på fulsidan)
  
-                                    let klassavg=$(".totalpoint"), klassTotal=0,klassAverage=0;
+                                    let klassavg=$(".elever .point"), klassTotal=0,klassAverage=0;
                                     for(let i=0;i<klassavg.length;i++)
                                      {klassTotal+= parseFloat(klassavg[i].value)}// lägger samman värdena i arrayen
                                        klassAverage=(klassTotal/klassavg.length);// räknar ut medelvärde
