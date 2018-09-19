@@ -51,11 +51,8 @@ body{
     height: 5vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 1.5vw;
-    border: none;
-    border-left: 1vw solid   rgb(104, 206, 119);
+    font-size: 5vw;
     }
-    
     
     h3{
     color: white;
@@ -102,11 +99,14 @@ body{
     
     .stats {
     background-color: white;
-    height: 88vh;
+    min-height: 88vh;
+    max-height: 88vh;
     box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.3);
+    }   
+    
+    .staplar {
+    bottom: 0;
     }
-    
-    
     
     .f1medel {
     background-color: rgba(110, 255, 132, 0.3);
