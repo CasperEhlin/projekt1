@@ -11,31 +11,31 @@ $("input").keyup(function(){
                testmax=(testMaxMid);
    
  
-        let task1avg=$(".provsvar div:nth-child(1) .answer"), task1Total=0,task1Average=0;
+        let task1avg=$(".provsvar div:nth-child(2) .answer"), task1Total=0,task1Average=0;
         for(let i=0;i<task1avg.length;i++)
              {task1Total+= parseFloat(task1avg[i].value)}// lägger samman värdena i arrayen
                task1Average=(task1Total/task1avg.length);// räknar ut medelvärde
                 // console.log(task1Average);   Visar resultat (temporär för att kunna se så att detta funkar på fulsidan)
 
- let task2avg=$(".provsvar div:nth-child(2) .answer"), task2Total=0,task2Average=0;
+ let task2avg=$(".provsvar div:nth-child(3) .answer"), task2Total=0,task2Average=0;
   for(let i=0;i<task2avg.length;i++)
      {task2Total+= parseFloat(task2avg[i].value)}// lägger samman värdena i arrayen
        task2Average=(task2Total/task2avg.length);// räknar ut medelvärde
          // console.log(task2Average);  Visar resultat (temporär för att kunna se så att detta funkar på fulsidan)
 
-          let task3avg=$(".provsvar div:nth-child(3) .answer"), task3Total=0,task3Average=0;
+          let task3avg=$(".provsvar div:nth-child(4) .answer"), task3Total=0,task3Average=0;
           for(let i=0;i<task3avg.length;i++)
              {task3Total+= parseFloat(task3avg[i].value)}// lägger samman värdena i arrayen
                task3Average=(task3Total/task3avg.length);// räknar ut medelvärde
                 //   console.log(task3Average); Visar resultat (temporär för att kunna se så att detta funkar på fulsidan)
 
-                  let task4avg=$(".provsvar div:nth-child(4) .answer"), task4Total=0,task4Average=0;
+                  let task4avg=$(".provsvar div:nth-child(5) .answer"), task4Total=0,task4Average=0;
                   for(let i=0;i<task4avg.length;i++)
                      {task4Total+= parseFloat(task4avg[i].value)}// lägger samman värdena i arrayen
                        task4Average=(task4Total/task4avg.length);// räknar ut medelvärde
                         //  console.log(task4Average);  Visar resultat (temporär för att kunna se så att detta funkar på fulsidan)
 
-                          let task5avg=$(".provsvar div:nth-child(5) .answer"), task5Total=0,task5Average=0;
+                          let task5avg=$(".provsvar div:nth-child(6) .answer"), task5Total=0,task5Average=0;
                             for(let i=0;i<task5avg.length;i++)
                               {task5Total+= parseFloat(task5avg[i].value)}// lägger samman värdena i arrayen
                                 task5Average=(task5Total/task5avg.length);// räknar ut medelvärde
@@ -505,6 +505,22 @@ $("input").keyup(function(){
                                    $("#elevtotal3").text(elev3Total);
                                    $("#elevtotal4").text(elev4Total);
                                    $("#elevtotal5").text(elev5Total);
+
+                                   var elev1provsvar = $("#elev1 .pupil").val();
+                                   $("#elev1provsvar h2").text(elev1provsvar);
+
+                                   var elev2provsvar = $("#elev2 .pupil").val();
+                                   $("#elev2provsvar h2").text(elev2provsvar);
+
+                                   var elev3provsvar = $("#elev3 .pupil").val();
+                                   $("#elev3provsvar h2").text(elev3provsvar);
+
+                                   var elev4provsvar = $("#elev4 .pupil").val();
+                                   $("#elev4provsvar h2").text(elev4provsvar);
+
+                                   var elev5provsvar = $("#elev5 .pupil").val();
+                                   $("#elev5provsvar h2").text(elev5provsvar);
+     
                                               
                                    $(".f1medel").css({
                                    "padding-top":  83-(task1Average/$("#task1max").val()*83)+"vh"
@@ -530,6 +546,7 @@ $("input").keyup(function(){
                                    "padding-top":  83-(klassAverage/testmax*83)+"vh"
                                    });
 
+                                   
 
                                        
                                 if(isNaN(parseFloat(task1Average))) {
