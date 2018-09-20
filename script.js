@@ -491,6 +491,73 @@ $("input").keyup(function(){
                                    });
 
 
+                                   $("#elev1 .pupil").css({
+                                    
+                                "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                +
+                                (elev1Total/testmax*100)
+                                +
+                                "%,#ffffff " 
+                                +
+                                (elev1Total/testmax*100)
+                                + 
+                                "%,#ffffff 100%)"
+                                });
+
+                                $("#elev2 .pupil").css({
+                                    
+                                "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                +
+                                (elev2Total/testmax*100)
+                                +
+                                "%,#ffffff " 
+                                +
+                                (elev2Total/testmax*100)
+                                + 
+                                "%,#ffffff 100%)"
+                                });
+
+                                $("#elev3 .pupil").css({
+                                    
+                                "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                +
+                                (elev3Total/testmax*100)
+                                +
+                                "%,#ffffff " 
+                                +
+                                (elev3Total/testmax*100)
+                                + 
+                                "%,#ffffff 100%)"
+                                });
+
+                                $("#elev4 .pupil").css({
+                                    
+                                "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                +
+                                (elev4Total/testmax*100)
+                                +
+                                "%,#ffffff " 
+                                +
+                                (elev4Total/testmax*100)
+                                + 
+                                "%,#ffffff 100%)"
+                                });
+
+                                $("#elev5 .pupil").css({
+                                    
+                                "background": "linear-gradient(to right,#69ce78 0%, #69ce78 " 
+                                +
+                                (elev5Total/testmax*100)
+                                +
+                                "%,#ffffff " 
+                                +
+                                (elev5Total/testmax*100)
+                                + 
+                                "%,#ffffff 100%)"
+                                });
+
+
+
                         //detta är staplarna för genomsnitten
 
                                    $(".f1medel").text("Fråga 1: "+task1Average+" av "+$("#task1max").val());
